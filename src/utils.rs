@@ -31,3 +31,8 @@ pub fn print_at_colored(x: u16, y: u16, text: &str, color: Color) -> std::io::Re
         SetForegroundColor(Color::Reset)
     )
 }
+
+// TODO: create a toggle for terminal mode
+pub fn enable_raw_mode() {
+    crossterm::terminal::enable_raw_mode().expect("Error enabling raw mode");
+}
