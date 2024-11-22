@@ -1,0 +1,9 @@
+[package]
+name = "menu-control"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28.1"
+colored = "2.1.0"
+figlet-rs = "0.1.5"
